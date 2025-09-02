@@ -1,0 +1,17 @@
+:root {
+  /* Cores Principais do Logo */
+  --sports-red: #DD2730;
+  --power-blue: #1F3389;
+
+  /* Cores de Contorno e Fundo */
+  --outline-gray: #D4D4D4;
+  --background-white: #FFFFFF;
+
+  /* Cores para uso no texto (exemplo) */
+  --text-primary: var(--sports-red);
+  --text-secondary: var(--power-blue);
+  
+  /* Contornos para texto (opcional, pode ajustar conforme necessário) */
+  --text-outline: 2px 2px 0 var(--power-blue), -2px -2px 0 var(--power-blue), 2px -2px 0 var(--power-blue), -2px 2px 0 var(--power-blue), 0 0 10px var(--outline-gray);
+  --text-outline-inverse: 2px 2px 0 var(--sports-red), -2px -2px 0 var(--sports-red), 2px -2px 0 var(--sports-red), -2px 2px 0 var(--sports-red), 0 0 10px var(--outline-gray);
+}
