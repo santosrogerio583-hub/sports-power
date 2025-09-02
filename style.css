@@ -15,3 +15,31 @@
   --text-outline: 2px 2px 0 var(--power-blue), -2px -2px 0 var(--power-blue), 2px -2px 0 var(--power-blue), -2px 2px 0 var(--power-blue), 0 0 10px var(--outline-gray);
   --text-outline-inverse: 2px 2px 0 var(--sports-red), -2px -2px 0 var(--sports-red), 2px -2px 0 var(--sports-red), -2px 2px 0 var(--sports-red), 0 0 10px var(--outline-gray);
 }
+body {
+    background-color: var(--background-white);
+}
+h1 {
+    color: var(--sports-red);
+}
+.navigation {
+    background-color:beige;
+    padding: 1.0rem 0rem;
+    width: 100%;
+}
+.navigation ul {
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.navigation a:hover {
+    transition-timing-function: linear;
+    color: #DD2730;
+}
