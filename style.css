@@ -1,31 +1,111 @@
 :root {
-  /* Cores Principais do Logo */
-  --sports-red: #DD2730;
-  --power-blue: #1F3389;
+    /* Cores Principais do Logo */
+    --sports-red: #DD2730;
+    --power-blue: #1F3389;
 
-  /* Cores de Contorno e Fundo */
-  --outline-gray: #D4D4D4;
-  --background-white: #FFFFFF;
+    /* Cores de Contorno e Fundo */
+    --outline-gray: #D4D4D4;
+    --background-white: #FFFFFF;
 
-  /* Cores para uso no texto (exemplo) */
-  --text-primary: var(--sports-red);
-  --text-secondary: var(--power-blue);
-  
-  /* Contornos para texto (opcional, pode ajustar conforme necessário) */
-  --text-outline: 2px 2px 0 var(--power-blue), -2px -2px 0 var(--power-blue), 2px -2px 0 var(--power-blue), -2px 2px 0 var(--power-blue), 0 0 10px var(--outline-gray);
-  --text-outline-inverse: 2px 2px 0 var(--sports-red), -2px -2px 0 var(--sports-red), 2px -2px 0 var(--sports-red), -2px 2px 0 var(--sports-red), 0 0 10px var(--outline-gray);
+    /* Cores para uso no texto (exemplo) */
+    --text-primary: var(--sports-red);
+    --text-secondary: var(--power-blue);
+
+    /* Contornos para texto (opcional, pode ajustar conforme necessário) */
+    --text-outline: 2px 2px 0 var(--power-blue), -2px -2px 0 var(--power-blue), 2px -2px 0 var(--power-blue), -2px 2px 0 var(--power-blue), 0 0 10px var(--outline-gray);
+    --text-outline-inverse: 2px 2px 0 var(--sports-red), -2px -2px 0 var(--sports-red), 2px -2px 0 var(--sports-red), -2px 2px 0 var(--sports-red), 0 0 10px var(--outline-gray);
 }
+
 body {
     background-color: var(--background-white);
 }
-h1 {
-    color: var(--sports-red);
+
+h1,
+h2 {
+    font-size: 2.25rem;
+    font-family: fantasy;
+    text-align: center;
+    background-image: linear-gradient(180deg, var(--sports-red) 50%, var(--power-blue) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
+h3  {
+    font-size: 2.25rem;
+    font-family: fantasy;
+    text-align: center;
+    color: var(--outline-gray);
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+footer p {
+    text-align: center;
+}
+
+img {
+    width: 70%;
+    height: 18.75rem;
+}
+
+picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hill picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 40%;
+        height: 18.75rem;
+    }
+}
+
+.contact {
+    background-color: var(--power-blue);
+    article {
+        padding-top: 1%;}
+    h2 {
+        padding-top: 1%;}
+    p {
+        color: var(--outline-gray);
+    padding-bottom: 1%;}
+    
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 40%;
+        height: 18.75rem;
+    }
+}
+
+
 .navigation {
-    background-color:beige;
+    background-color: var(--power-blue);
     padding: 1.0rem 0rem;
     width: 100%;
+    transition: var(--background-white);
 }
+
 .navigation ul {
     font-size: 1.5rem;
     list-style: none;
@@ -33,12 +113,18 @@ h1 {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 .navigation a {
+    font-family: fantasy;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    color: var(--outline-gray);
 
 }
+
 .navigation a:hover {
     transition-timing-function: linear;
     color: #DD2730;
