@@ -31,6 +31,14 @@ h2 {
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+h2:hover {
+    
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+ 
+}
+
 h3  {
     font-size: 2.25rem;
     font-family: fantasy;
@@ -59,8 +67,14 @@ picture {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2%;
 
 }
+ picture:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+ }
 
 .hill picture {
     width: 100%;
@@ -95,6 +109,7 @@ picture {
     img {
         width: 40%;
         height: 18.75rem;
+        
     }
 }
 
